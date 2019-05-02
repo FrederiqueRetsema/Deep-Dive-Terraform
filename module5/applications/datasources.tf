@@ -24,7 +24,7 @@ data "terraform_remote_state" "networking" {
 
 data "aws_ami" "ubuntu" {
   most_recent = true
-  owners = ["ubuntu"]
+  owners = ["canonical"]
 
   filter {
     name   = "name"
