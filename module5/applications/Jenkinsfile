@@ -11,8 +11,8 @@ pipeline {
         TF_HOME = tool('terraform-0.11.1')
         TF_IN_AUTOMATION = "true"
         PATH = "$TF_HOME:$PATH"
-        DYNAMODB_STATELOCK = "ddt-tfstatelock"
-        APPLICATION_BUCKET = "ddt-application"
+        DYNAMODB_STATELOCK = "fra5-ddt-tfstatelock"
+        APPLICATION_BUCKET = "fra5-ddt-application"
         APPLICATION_ACCESS_KEY = credentials('application_access_key')
         APPLICATION_SECRET_KEY = credentials('application_secret_key')
     }
